@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Pain</title>
+    <script>
+        const getColor = () => Math.floor(Math.random() * 256);
+    </script>
 </head>
 <body>
+
     <button class="btn">Котеки супер класс</button>
+
+    <script>
+        document.querySelector(".btn").addEventListener("click", (e) => {
+            e.target.borderColor = `rgb(${getColor()},${getColor()},${getColor()})`;
+        })
+    </script>
+
 </body>
 </html>
